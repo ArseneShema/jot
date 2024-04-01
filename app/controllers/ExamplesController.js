@@ -4,9 +4,10 @@ import { examplesService } from "../services/ExampleService.js"
 function _logExamples() {
   console.clear()
 
-  AppState.examples.forEach(exampleInstance => {
+  AppState.jots.forEach(exampleInstance => {
     console.log(exampleInstance.message)
   })
+
 
 }
 

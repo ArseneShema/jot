@@ -1,15 +1,12 @@
-// import { JotController } from "./controllers/ExamplesController.js";
-import { JotController } from "./controllers/JotController.js";
+import { ExamplesController } from "./controllers/ExamplesController.js";
+import { JotsController } from "./controllers/JotsController.js";
 import { Router } from "./utils/Router.js";
-
 
 export const router = new Router([
   {
     path: '',
-    controllers: [JotController],
-    view: 'app/views/Jotview.html'
-
-
+    controllers: [JotsController],
+    view: 'app/views/HomeView.html'
   },
   {
     path: '#/about',
